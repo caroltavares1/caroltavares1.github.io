@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #8a2be2;
+  --background-color: #edefee;
+  --highlight-color: #fff;
+  --text-color: #000;
+  --border-color: #b9b9b9;
+}
+
+.mobile {
+  display: none;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2,
+h3 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header,
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background-color: var(--background-color);
+  position: fixed;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+main section {
+  margin-bottom: 9rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.4rem;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15rem;
+  margin-top: 9rem;
+}
+
+.home .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3rem;
+  width: 60%;
+}
+.home .left-side ul {
+  padding-left: 20rem;
+  font-size: 4.2rem;
+}
+
+.home img {
+  border-radius: 250px;
+}
+
+.projects,
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .card-project-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.projects .card-project-list .card-project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 0 2rem 0;
+  border: 3px ridge var(--border-color);
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 1rem;
+}
+
+#project-name {
+  font-weight: 700;
+}
+
+button {
+  font-size: 2rem;
+  width: 12.5rem;
+  height: 4rem;
+  padding: 0 1rem;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--highlight-color);
+}
