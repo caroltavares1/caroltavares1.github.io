@@ -51,6 +51,7 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
+  border: 1px solid red;
 }
 
 .container {
@@ -108,7 +109,9 @@ span {
 }
 
 .home img {
-  border-radius: 250px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color); /* Optional border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .projects .card-project-list {
@@ -233,6 +236,10 @@ button:hover .purple {
 .right-side ul li {
   display: flex;
   gap: 0.5rem;
+}
+
+.about .content p {
+  text-align: left;
 }
 
 button#conectar {
