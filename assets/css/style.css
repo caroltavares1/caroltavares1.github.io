@@ -1,18 +1,22 @@
 :root {
-  --primary-color: #a594f9;
-  --background-color: #f5efff;
-  --icon-color: #7e60bf;
+  --primary-color: #10375c;
+  --background-color: #f4f6ff;
+  --icon-color: #f3c623;
   --highlight-color: #fff;
   --text-color: #000;
-  --border-color: #cdc1ff;
+  --border-color: #f3c623;
 }
 
 .mobile {
   display: none;
+  visibility: hidden;
 }
 
 a {
-  color: var(--icon-color);
+  color: var(--text-color);
+}
+a:visited {
+  color: inherit;
 }
 
 h1 {
@@ -51,7 +55,6 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
-  border: 1px solid red;
 }
 
 .container {
@@ -80,7 +83,7 @@ main section {
 }
 
 .list-row li:hover {
-  color: var(--primary-color);
+  color: var(--border-color);
 }
 
 span {
@@ -139,6 +142,10 @@ span {
   flex-direction: column;
   margin-top: 5rem;
   gap: 0.8rem;
+}
+.advpl-card > p:first-child {
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 .advpl-code-card {
   display: flex;

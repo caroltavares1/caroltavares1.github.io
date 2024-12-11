@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio de Carolina Tavares">
 	<title>Carolina Tavares | Portfolio</title>
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,20 +22,20 @@
 
 	<header>
 		<section class="container header">
-			<p><img src="./assets/images/favicon-16x16.png" alt="Logo">
+			<p><img src="./assets/images/favicon-16x16.png" alt="Logo favicon">
 				Carolina Tavares</p>
-			<ul class="list-row">
+			<ul class="list-row" aria-label="Lista de seções da pagina">
 				<li>
 					<a class="web" href="#home"><span>#</span>Home</a>
-					<a title="icon" href="#home"><i class="bi bi-house-door mobile"></i></a>
+					<a class="mobile" title="Icon de casa" href="#home"><i class="bi bi-house-door"></i></a>
 				</li>
 				<li>
 					<a class="web" href="#projects"><span>#</span>Projetos</a>
-					<a title="icon" href="#projects"><i class="bi bi-window-stack mobile"></i></a>
+					<a class="mobile" title="Icon de projetos" href="#projects"><i class="bi bi-window-stack"></i></a>
 				</li>
 				<li>
 					<a class="web" href="#about"><span>#</span>Sobre-Mim</a>
-					<a title="icon" href="#about"><i class="bi bi-person mobile"></i></a>
+					<a class="mobile" title="Icon de pessoa" href="#about"><i class="bi bi-person"></i></a>
 				</li>
 			</ul>
 		</section>
@@ -44,7 +45,7 @@
 		<section id="home" class="container home">
 			<div class="left-side">
 				<h1>Carolina é Desenvolvedora <span>Front-end</span> e Analista Desenvolvedora <span>Protheus/AdvPL</span></h1>
-				<ul class="list-row">
+				<ul class="list-row" aria-label="Lista com links para redes sociais">
 					<li><a title="github" target="_blank" rel="noopener noreferrer" href="https://github.com/caroltavares1/"><i
 								class="bi bi-github purple"></i></a></li>
 					<li><a title="linkedin" target="_blank" rel="noopener noreferrer"
@@ -59,21 +60,21 @@
 			<div class="card-project-list">
 				<div class="card-project">
 					<img src="./assets/images/projeto-1.png" alt="Foto do projeto 1">
-					<ul class="list-row ">
-						<li><i class="devicon-angular-plain"></i></li>
-						<li><i class="devicon-typescript-plain"></i></li>
-						<li><i class="devicon-html5-plain-wordmark"></i></li>
-						<li><i class="devicon-sass-original"></i></li>
+					<ul class="list-row" aria-label="Lista com tecnologia usadas">
+						<li aria-label="Angular"><i class="devicon-angular-plain"></i></li>
+						<li aria-label="TypeScript"><i class="devicon-typescript-plain"></i></li>
+						<li aria-label="Html5"><i class="devicon-html5-plain-wordmark"></i></li>
+						<li aria-label="Sass"><i class="devicon-sass-original"></i></li>
 					</ul>
 					<div class="card-text">
 						<p class="project-name">Breweries List</p>
 						<p>Lista de cervejarias. Utiliza consumo de api rest, paginação, filtro.</p>
-						<div class="row-list">
+						<div class="row-list" aria-label="Lista com botões para acessar o código ou o deploy">
 							<a target="_blank" rel="noopener noreferrer"
 								href="https://github.com/caroltavares1/desafio-fronted"><button type="button">Github <i
-										class="bi bi-arrow-up-right purple"></i></button></a>
+										aria-hidden="true" class="bi bi-arrow-up-right purple"></i></button></a>
 							<a target="_blank" rel="noopener noreferrer" href="https://desafio-frontend-5c427.web.app/"><button
-									type="button">Live <i class="bi bi-arrow-up-right purple"></i></button></a>
+									type="button">Deploy <i aria-hidden="true" class="bi bi-arrow-up-right purple"></i></button></a>
 						</div>
 					</div>
 
@@ -81,52 +82,61 @@
 
 				<div class="card-project">
 					<img src="./assets/images/projeto-2.png" alt="Foto do projeto 2">
-					<ul class="list-row ">
-						<li><i class="devicon-html5-plain-wordmark"></i></li>
-						<li><i class="devicon-css3-plain-wordmark"></i></li>
+					<ul class="list-row" aria-label="Lista com tecnologia usadas">
+						<li aria-label="Html5"><i class="devicon-html5-plain-wordmark"></i></li>
+						<li aria-label="Css3"><i class="devicon-css3-plain-wordmark"></i></li>
 					</ul>
 					<div class="card-text">
 						<p class="project-name">Landing Page</p>
 						<p>Projeto feito no Bootcamp da plataforma Dio. Prática de Html e Css.</p>
-						<div class="button-list">
+						<div class="list-row" aria-label="Lista com botões para acessar o código ou o deploy">
 							<a target="_blank" rel="noopener noreferrer"
-								href="https://github.com/caroltavares1/trilha-css-desafio-01"><button type="button">Github
-									<i class="bi bi-arrow-up-right purple"></i></button></a>
-							<a target="_blank" rel="noopener noreferrer"
-								href="https://trilha-css-desafio-01-flame.vercel.app/"><button type="button">Live <i
-										class="bi bi-arrow-up-right purple"></i></button></a>
+								href="https://github.com/caroltavares1/trilha-css-desafio-01">
+								<button type="button">Github
+									<i aria-hidden="true" class="bi bi-arrow-up-right purple"></i>
+								</button>
+							</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://trilha-css-desafio-01-flame.vercel.app/">
+								<button type="button">Deploy <i aria-hidden="true" class="bi bi-arrow-up-right purple"></i>
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
 				<div class="card-project">
 					<img src="./assets/images/projeto-3.png" alt="Foto do projeto 3">
-					<ul class="list-row ">
-						<li><i class="devicon-react-original"></i></li>
-						<li><i class="devicon-html5-plain-wordmark"></i></li>
-						<li><i class="devicon-javascript-plain"></i></li>
-						<li><i class="devicon-tailwindcss-original"></i></li>
+					<ul class="list-row" aria-label="Lista com tecnologia usadas">
+						<li aria-label="React"><i class="devicon-react-original"></i></li>
+						<li aria-label="Html5"><i class="devicon-html5-plain-wordmark"></i></li>
+						<li aria-label="JavaScript"><i class="devicon-javascript-plain"></i></li>
+						<li aria-label="tailwind"><i class="devicon-tailwindcss-original"></i></li>
 					</ul>
 					<div class="card-text">
 						<p class="project-name">Tela de login</p>
 						<p>Projeto de uma tela de login feito em React como prático do framework</p>
-						<div class="list-row">
+						<div class="list-row" aria-label="Lista com botões para acessar o código ou o deploy">
 							<a target="_blank" rel="noopener noreferrer"
-								href="https://github.com/caroltavares1/mp-tela-login-tailwind/"><button type="button">Github
-									<i class="bi bi-arrow-up-right purple"></i></button></a>
-							<a target="_blank" rel="noopener noreferrer" href="https://mp-tela-login-tailwind-phi.vercel.app/"><button
-									type="button">Live <i class="bi bi-arrow-up-right purple"></i></button></a>
+								href="https://github.com/caroltavares1/mp-tela-login-tailwind/">
+								<button type="button">Github
+									<i aria-hidden="true" class="bi bi-arrow-up-right purple"></i>
+								</button>
+							</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://mp-tela-login-tailwind-phi.vercel.app/">
+								<button type="button">Deploy <i aria-hidden="true" class="bi bi-arrow-up-right purple"></i>
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="advpl-card">
-				<h4><span>#</span>Projetos Advpl</h4>
+				<p><span>#</span>Projetos Advpl</p>
 				<p>Alguns exemplos de códigos feitos por mim em Advpl e TL++ que eu posso compartilhar.</p>
 				<div class="advpl-code-card">
 					<img src="./assets/images/codigo-adpvl.png" width="350px" height="200px" alt="Foto de codigo-adpvl">
 					<div class="list-row">
 						<a target="_blank" rel="noopener noreferrer" href="https://github.com/caroltavares1/ProtheusAdvPL"><button
-								type="button">Github <i class="bi bi-arrow-up-right purple"></i></button></a>
+								type="button">Github <i aria-hidden="true" class="bi bi-arrow-up-right purple"></i></button></a>
 					</div>
 				</div>
 			</div>
@@ -181,7 +191,7 @@
 				</p>
 				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tscaroltavares/"><button
 						id="conectar" type="button">Conecte-se comigo
-						<i class="bi bi-arrow-up-right purple"></i></button></a>
+						<i aria-hidden="true" class="bi bi-arrow-up-right purple"></i></button></a>
 			</div>
 
 
