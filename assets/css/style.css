@@ -129,13 +129,22 @@ span {
 .home .left-side ul {
   display: flex;
   padding-left: 20rem;
-  font-size: 4.6rem;
+  font-size: 3.8rem;
 }
 
 .home img {
   border-radius: 50%;
   border: 4px solid var(--primary-color); /* Optional border */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects-header a:hover {
+  color: var(--primary-color);
 }
 
 .projects .card-project-list {
@@ -203,7 +212,7 @@ button {
   padding: 0 1rem;
   border: 2px solid var(--primary-color);
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 }
 
 button:hover {
