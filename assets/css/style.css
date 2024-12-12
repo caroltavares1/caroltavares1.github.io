@@ -1,10 +1,31 @@
-:root {
+.light-theme {
   --primary-color: #10375c;
   --background-color: #f4f6ff;
-  --icon-color: #f3c623;
-  --highlight-color: #fff;
+  --icon-color: #10375c;
+  --contrast-color: #f4f6ff;
   --text-color: #000;
   --border-color: #f3c623;
+}
+
+.dark-theme {
+  --primary-color: #f3c623;
+  --background-color: #223242;
+  --text-color: #fff;
+  --contrast-color: #f4f6ff;
+  --border-color: #f3c623;
+  --icon-color: #f4f6ff;
+}
+
+.theme-button {
+  border: none;
+  width: fit-content;
+  font-size: 2.4rem;
+  transition: background-color 1s ease;
+}
+
+button.theme-button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
 .mobile {
@@ -29,7 +50,7 @@ h3 {
   margin-bottom: 4rem;
 }
 
-.purple {
+.icon-color {
   color: var(--icon-color);
 }
 
@@ -174,6 +195,7 @@ span {
 }
 
 button {
+  color: var(--text-color);
   background-color: transparent;
   font-size: 2rem;
   width: 12.5rem;
@@ -186,10 +208,10 @@ button {
 
 button:hover {
   background-color: var(--primary-color);
-  color: var(--highlight-color);
+  color: var(--contrast-color);
 }
-button:hover .purple {
-  color: var(--highlight-color);
+button:hover .icon-color {
+  color: var(--contrast-color);
 }
 
 .skills .skill-list {
@@ -265,7 +287,7 @@ button#conectar {
 
 button#conectar:hover {
   background-color: var(--primary-color);
-  color: var(--highlight-color);
+  color: var(--contrast-color);
 }
 footer {
   width: 100%;

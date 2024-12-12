@@ -18,12 +18,14 @@
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="light-theme">
 
 	<header>
 		<section class="container header">
 			<p><img src="./assets/images/favicon-16x16.png" alt="Logo favicon">
 				Carolina Tavares</p>
+			<button class="theme-button" title="Mudar o tema entre claro e escuro" type="button"><i class="bi bi-moon-stars"
+					id="theme-icon"></i></button>
 			<ul class="list-row" aria-label="Lista de seções da pagina">
 				<li>
 					<a class="web" href="#home"><span>#</span>Home</a>
@@ -47,9 +49,9 @@
 				<h1>Carolina é Desenvolvedora <span>Front-end</span> e Analista Desenvolvedora <span>Protheus/AdvPL</span></h1>
 				<ul class="list-row" aria-label="Lista com links para redes sociais">
 					<li><a title="github" target="_blank" rel="noopener noreferrer" href="https://github.com/caroltavares1/"><i
-								class="bi bi-github purple"></i></a></li>
+								class="bi bi-github icon-color"></i></a></li>
 					<li><a title="linkedin" target="_blank" rel="noopener noreferrer"
-							href="https://www.linkedin.com/in/tscaroltavares/"><i class="bi bi-linkedin purple"></i></a>
+							href="https://www.linkedin.com/in/tscaroltavares/"><i class="bi bi-linkedin icon-color"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -72,9 +74,9 @@
 						<div class="row-list" aria-label="Lista com botões para acessar o código ou o deploy">
 							<a target="_blank" rel="noopener noreferrer"
 								href="https://github.com/caroltavares1/desafio-fronted"><button type="button">Github <i
-										aria-hidden="true" class="bi bi-arrow-up-right purple"></i></button></a>
+										aria-hidden="true" class="bi bi-arrow-up-right icon-color"></i></button></a>
 							<a target="_blank" rel="noopener noreferrer" href="https://desafio-frontend-5c427.web.app/"><button
-									type="button">Deploy <i aria-hidden="true" class="bi bi-arrow-up-right purple"></i></button></a>
+									type="button">Deploy <i aria-hidden="true" class="bi bi-arrow-up-right icon-color"></i></button></a>
 						</div>
 					</div>
 
@@ -93,11 +95,11 @@
 							<a target="_blank" rel="noopener noreferrer"
 								href="https://github.com/caroltavares1/trilha-css-desafio-01">
 								<button type="button">Github
-									<i aria-hidden="true" class="bi bi-arrow-up-right purple"></i>
+									<i aria-hidden="true" class="bi bi-arrow-up-right icon-color"></i>
 								</button>
 							</a>
 							<a target="_blank" rel="noopener noreferrer" href="https://trilha-css-desafio-01-flame.vercel.app/">
-								<button type="button">Deploy <i aria-hidden="true" class="bi bi-arrow-up-right purple"></i>
+								<button type="button">Deploy <i aria-hidden="true" class="bi bi-arrow-up-right icon-color"></i>
 								</button>
 							</a>
 						</div>
@@ -118,11 +120,11 @@
 							<a target="_blank" rel="noopener noreferrer"
 								href="https://github.com/caroltavares1/mp-tela-login-tailwind/">
 								<button type="button">Github
-									<i aria-hidden="true" class="bi bi-arrow-up-right purple"></i>
+									<i aria-hidden="true" class="bi bi-arrow-up-right icon-color"></i>
 								</button>
 							</a>
 							<a target="_blank" rel="noopener noreferrer" href="https://mp-tela-login-tailwind-phi.vercel.app/">
-								<button type="button">Deploy <i aria-hidden="true" class="bi bi-arrow-up-right purple"></i>
+								<button type="button">Deploy <i aria-hidden="true" class="bi bi-arrow-up-right icon-color"></i>
 								</button>
 							</a>
 						</div>
@@ -136,7 +138,7 @@
 					<img src="./assets/images/codigo-adpvl.png" width="350px" height="200px" alt="Foto de codigo-adpvl">
 					<div class="list-row">
 						<a target="_blank" rel="noopener noreferrer" href="https://github.com/caroltavares1/ProtheusAdvPL"><button
-								type="button">Github <i aria-hidden="true" class="bi bi-arrow-up-right purple"></i></button></a>
+								type="button">Github <i aria-hidden="true" class="bi bi-arrow-up-right icon-color"></i></button></a>
 					</div>
 				</div>
 			</div>
@@ -191,7 +193,7 @@
 				</p>
 				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tscaroltavares/"><button
 						id="conectar" type="button">Conecte-se comigo
-						<i aria-hidden="true" class="bi bi-arrow-up-right purple"></i></button></a>
+						<i aria-hidden="true" class="bi bi-arrow-up-right icon-color"></i></button></a>
 			</div>
 
 
@@ -203,14 +205,14 @@
 				<div class="right-side">
 					<ul class="list-row">
 						<li><a title="github" target="_blank" rel="noopener noreferrer" href="https://github.com/caroltavares1/"><i
-									class="bi bi-github purple" id="icon-color"></i></a>Github</li>
+									class="bi bi-github icon-color" id="icon-color"></i></a>Github</li>
 						<li><a title="linkedin" target="_blank" rel="noopener noreferrer"
-								href="https://www.linkedin.com/in/tscaroltavares/"><i class="bi bi-linkedin purple"></i></a>Linkedin
+								href="https://www.linkedin.com/in/tscaroltavares/"><i class="bi bi-linkedin icon-color"></i></a>Linkedin
 						</li>
 					</ul>
 					<div class="block-container">
 						<ul>
-							<li><i class="bi bi-envelope-at-fill purple"></i>caroltavares.ts@gmail.com</li>
+							<li><i class="bi bi-envelope-at-fill icon-color"></i>caroltavares.ts@gmail.com</li>
 						</ul>
 					</div>
 				</div>
@@ -225,6 +227,7 @@
 
 	</footer>
 
+	<script src="./assets/scripts/main.js" defer></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<script>
 		const sr = ScrollReveal({
