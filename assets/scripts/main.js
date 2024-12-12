@@ -15,7 +15,6 @@ btn.addEventListener('click', function () {
   const newTheme = currentTheme === 'light-theme' ? 'dark-theme' : 'light-theme';
 
   const currentThemeIcon = document.getElementById('theme-icon').classList[1]
-  console.log(document.getElementById('theme-icon').classList[1])
   const newThemeIcon = currentThemeIcon === 'bi-moon-stars' ? 'bi-sun' : 'bi-moon-stars';
 
   document.body.classList.remove(currentTheme);
@@ -28,6 +27,5 @@ btn.addEventListener('click', function () {
   localStorage.setItem('theme', newTheme); // Salva a preferência
   localStorage.setItem('theme-icon', newThemeIcon); // Salva a preferência
 
-  console.log(document.getElementById('theme-icon').classList)
 
 })
